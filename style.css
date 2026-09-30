@@ -1,31 +1,41 @@
-/* ↓ EN LAS PRIMERA LÍNEA PODEMOS ENLAZAR LAS FUENTES QUE USAREMOS ↓ */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
-
-/* ↓ A PARTIR DE ESE PUNTO PODEMOS LLAMAR TODAS LAS PROPIEDADES DE NUESTRAS CLASES Y ID´S ↓ */
 body {
-  background-color: #ffaffc;
-  margin: 0;
-  padding: 0;
+  font-family: "Newsreader", serif;
+  font-size: 20px;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  line-height: 1.6;
+  color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-h1 {
-  /* font-family: 'Nunito Sans';*/
-  font-family: 'Honk', system-ui;
-  font-weight: 500;
-  margin: 0;
-  position: absolute;
-  font-size: 20vh;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+h1 { color: #FFD58A; }
+
+a { color: #FFD58A; }
+a:hover { color: white; }
+
+img {
+  width: 100%;
+  border-radius: 15px;
+  border: 4px solid #FFD58A;
 }
 
-a {
-  color: blue;
-  text-decoration: none;
+blockquote {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left: 6px solid #FFD58A;
+  padding: 15px;
+  margin: 30px 0;
+  font-style: italic;
 }
 
-a:hover {
-  background-color: #36fcff;
+.eleccion { font-size: 28px; }
+
+/* Un color de fondo diferente para cada página */
+.portada {
+  background: linear-gradient(#0E3B43, #1F8A8A);
+  text-align: center;
 }
+.orilla { background: linear-gradient(#1F8A8A, #E0B872); }
+.oceano { background: linear-gradient(#1A5560, #0A2A30); }
+.cauce { background: linear-gradient(#2F5D46, #6E8B4E); }
